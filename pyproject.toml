@@ -1,0 +1,10 @@
+[project]
+name = "trademark-v3-engineering-samples"
+version = "0.1.0"
+description = "Selected engineering excerpts from a private quantitative research project"
+requires-python = ">=3.13,<3.14"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

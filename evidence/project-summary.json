@@ -1,0 +1,23 @@
+{
+  "scope": "Author-provided summary of retained private development reports; underlying data and reports are not published",
+  "feature_inventory": {
+    "eligible_stock_observations": 4625071,
+    "trading_sessions": 1511,
+    "calendar_months": 72,
+    "saved_feature_inspection_passed": true,
+    "meaning": "Dataset coverage, not the number of rows in every fit. This inventory measured features; it was not a model-fit report."
+  },
+  "account_replay_milestone": {
+    "completed_sessions": 381,
+    "start": "2016-01-04",
+    "end": "2017-07-07",
+    "full_declared_window_completed_at_this_checkpoint": false,
+    "following_session": "2017-07-10",
+    "following_session_status": "Stopped for unresolved fractional-share cash terms; no account or fill records committed for the failed session",
+    "meaning": "An earlier account-replay milestone, separate from LightGBM model-performance evaluation."
+  },
+  "limitations": [
+    "These scale figures are not independently reproducible from the public excerpts.",
+    "Synthetic checks establish selected behaviors, not complete corporate-action coverage or investment performance."
+  ]
+}

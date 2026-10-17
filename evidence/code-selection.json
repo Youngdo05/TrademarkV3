@@ -1,0 +1,337 @@
+{
+  "scope": "Selected functions and statement blocks from the private TradeMark V3 implementation, isolated by public example adapters",
+  "verification": "Local extraction checks compare retained syntax against the private source snapshot. Source hashes identify that snapshot; the originals remain private.",
+  "public_adapters": {
+    "selected/modeling.py": "Original outcome ledger and numerical fitting helpers; original fitter global names now bind explicit synthetic EXAMPLE settings. Private project seeds and hyperparameters are omitted.",
+    "selected/constraints.py": "Original sparse row construction and CVXPY ceiling statements; lightweight public row types and input guards replace private portfolio objects. Tests use an illustrative least-squares objective.",
+    "selected/accounting.py": "Original cash-merger, receivable-payment and missing-opening-quote statements; BookExample and function wrappers isolate those cases. Private state validation, source qualification, order handling, other actions and full replay are omitted."
+  },
+  "selections": [
+    {
+      "source_module": "engine/run/common.py",
+      "source_selection": "IntegrityError",
+      "source_lines": [
+        16,
+        17
+      ],
+      "source_file_sha256": "595216ea17e073f90d10c9ff1f070b623cf9b258c60fbd3a7ab7bcc0382949b3",
+      "public_file": "selected/common.py",
+      "public_symbol": "IntegrityError",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "83792e9b6db3ff504af002d138e0b218c091fab6e693db7f5a8b54161a2b3039"
+    },
+    {
+      "source_module": "engine/labels/outcomes.py",
+      "source_selection": "OutcomeLedger and outcome schema",
+      "source_lines": [
+        16,
+        96
+      ],
+      "source_file_sha256": "5dcb504fe0f8a5cc11adbfc47bed7f34c9116330851171f3f757a090b656725b",
+      "public_file": "selected/modeling.py",
+      "public_symbol": "OutcomeLedger and outcome schema",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "4c5dfe3b0e10daa4a152f25a7a56c329a2877473478f5e0f24dfe25ca931ea85"
+    },
+    {
+      "source_module": "engine/models/ml.py",
+      "source_selection": "ModelFitError",
+      "source_lines": [
+        91,
+        92
+      ],
+      "source_file_sha256": "d5af2e6ec91d9e30c20bcb29d3cb80d0de0505e9394bfbb5b95a0fa87ab147d7",
+      "public_file": "selected/modeling.py",
+      "public_symbol": "ModelFitError",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "Demonstration-only global bindings: LGBM_FIXED -> EXAMPLE_FIT_SETTINGS, LIGHTGBM_SEEDS -> EXAMPLE_SEEDS, FIT_WALL_SECONDS -> EXAMPLE_FIT_LIMIT_SECONDS"
+      ],
+      "selected_ast_sha256": "52abbadb3b9eb5e28bc9c0ce729a8bc107f2a048bd5890be10d30e7252a7003e"
+    },
+    {
+      "source_module": "engine/models/ml.py",
+      "source_selection": "_finite_fit_inputs",
+      "source_lines": [
+        95,
+        113
+      ],
+      "source_file_sha256": "d5af2e6ec91d9e30c20bcb29d3cb80d0de0505e9394bfbb5b95a0fa87ab147d7",
+      "public_file": "selected/modeling.py",
+      "public_symbol": "_finite_fit_inputs",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "Demonstration-only global bindings: LGBM_FIXED -> EXAMPLE_FIT_SETTINGS, LIGHTGBM_SEEDS -> EXAMPLE_SEEDS, FIT_WALL_SECONDS -> EXAMPLE_FIT_LIMIT_SECONDS"
+      ],
+      "selected_ast_sha256": "3cc745915e09347a6f8ac0cb0109e29624a099a7f6fa01e48abcf7c48f7c4592"
+    },
+    {
+      "source_module": "engine/models/ml.py",
+      "source_selection": "fit_diagnostics",
+      "source_lines": [
+        193,
+        199
+      ],
+      "source_file_sha256": "d5af2e6ec91d9e30c20bcb29d3cb80d0de0505e9394bfbb5b95a0fa87ab147d7",
+      "public_file": "selected/modeling.py",
+      "public_symbol": "fit_diagnostics",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "Demonstration-only global bindings: LGBM_FIXED -> EXAMPLE_FIT_SETTINGS, LIGHTGBM_SEEDS -> EXAMPLE_SEEDS, FIT_WALL_SECONDS -> EXAMPLE_FIT_LIMIT_SECONDS"
+      ],
+      "selected_ast_sha256": "14b857704c645b22d401daf4830047f1a735eed2a6ede76dde331d2e1092238e"
+    },
+    {
+      "source_module": "engine/models/ml.py",
+      "source_selection": "_cfg_id",
+      "source_lines": [
+        542,
+        544
+      ],
+      "source_file_sha256": "d5af2e6ec91d9e30c20bcb29d3cb80d0de0505e9394bfbb5b95a0fa87ab147d7",
+      "public_file": "selected/modeling.py",
+      "public_symbol": "_cfg_id",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "Demonstration-only global bindings: LGBM_FIXED -> EXAMPLE_FIT_SETTINGS, LIGHTGBM_SEEDS -> EXAMPLE_SEEDS, FIT_WALL_SECONDS -> EXAMPLE_FIT_LIMIT_SECONDS"
+      ],
+      "selected_ast_sha256": "dc93a6a0ac9d16c43f720f932c793abf5ff10d6c2b33aaf93e0ce6afb5822668"
+    },
+    {
+      "source_module": "engine/models/ml.py",
+      "source_selection": "fit_lgbm",
+      "source_lines": [
+        1058,
+        1131
+      ],
+      "source_file_sha256": "d5af2e6ec91d9e30c20bcb29d3cb80d0de0505e9394bfbb5b95a0fa87ab147d7",
+      "public_file": "selected/modeling.py",
+      "public_symbol": "fit_lgbm",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "Demonstration-only global bindings: LGBM_FIXED -> EXAMPLE_FIT_SETTINGS, LIGHTGBM_SEEDS -> EXAMPLE_SEEDS, FIT_WALL_SECONDS -> EXAMPLE_FIT_LIMIT_SECONDS"
+      ],
+      "selected_ast_sha256": "b5438afe3edaca2c139154abcd6c494edce0611840b3e6a8c4db1cfe43ffa754"
+    },
+    {
+      "source_module": "engine/portfolio/exposure.py",
+      "source_selection": "sparse_geometry",
+      "source_lines": [
+        176,
+        197
+      ],
+      "source_file_sha256": "574171d8bf13a3666f9a8096cc17947771f9941cd1d6f1e60ef5fae820a621bb",
+      "public_file": "selected/constraints.py",
+      "public_symbol": "ExposureRows.sparse_geometry",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "a93df37b81d001789bc07765bd410ae55f48c3f1281ff8d0e5c7a16c559f2bc8"
+    },
+    {
+      "source_module": "engine/portfolio/solver.py",
+      "source_selection": "attach_exposure_limits: sparse CVXPY ceiling block",
+      "source_lines": [
+        244,
+        251
+      ],
+      "source_file_sha256": "83f8574b35b5f257da9fe877828b8e3984c6c540e040564747bcf33915576495",
+      "public_file": "selected/constraints.py",
+      "public_symbol": "attach_exposure_limits: sparse CVXPY ceiling block",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "Wrapped with explicit row/index inputs and validation; no private objective, costs, risk coefficients or solver policy included"
+      ],
+      "selected_ast_sha256": "b27148caa163167c5af2d41962c33b222d04adb5810d98679fcba157eea27e83"
+    },
+    {
+      "source_module": "engine/book/core.py",
+      "source_selection": "money",
+      "source_lines": [
+        40,
+        44
+      ],
+      "source_file_sha256": "4ffcb2ef43d1dcbb71fdc5d02372f576e5cd7600907212f1ddc90ad9b0436c7f",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "money",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "dca5e7451dbdd3780d50f26310ded954aa83e5d2ed0b2b7484c1c0d79830595c"
+    },
+    {
+      "source_module": "engine/book/core.py",
+      "source_selection": "positive_int",
+      "source_lines": [
+        47,
+        50
+      ],
+      "source_file_sha256": "4ffcb2ef43d1dcbb71fdc5d02372f576e5cd7600907212f1ddc90ad9b0436c7f",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "positive_int",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "590ec0f9bb4a5bafbe3dbd46e0e79434cc673c666aee2e373f4cfeb0d7391f5c"
+    },
+    {
+      "source_module": "engine/book/core.py",
+      "source_selection": "Receivable",
+      "source_lines": [
+        54,
+        57
+      ],
+      "source_file_sha256": "4ffcb2ef43d1dcbb71fdc5d02372f576e5cd7600907212f1ddc90ad9b0436c7f",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "Receivable",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "1acc44156575d9700c2277d4e45ce2d185a25cdf94736bdbb94dd06325eba5bc"
+    },
+    {
+      "source_module": "engine/book/core.py",
+      "source_selection": "_pay_session",
+      "source_lines": [
+        542,
+        546
+      ],
+      "source_file_sha256": "4ffcb2ef43d1dcbb71fdc5d02372f576e5cd7600907212f1ddc90ad9b0436c7f",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "_pay_session",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "8b48f31348b9356fe6c1061872b15631224a0a705f91ed3ae6aa53ed79d7d9bc"
+    },
+    {
+      "source_module": "engine/calendar_cutoff/market_calendar.py",
+      "source_selection": "_schedule",
+      "source_lines": [
+        14,
+        17
+      ],
+      "source_file_sha256": "7d3f8ce0e5a051906de1d165fa80852265efd688adfdb67bcef80828c98eac0e",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "_schedule",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "cbf635f66a574bb2dbae13e75abe8d1469a55be35c8da3e63a4bfe1de6058c9c"
+    },
+    {
+      "source_module": "engine/calendar_cutoff/market_calendar.py",
+      "source_selection": "_sessions_for",
+      "source_lines": [
+        20,
+        21
+      ],
+      "source_file_sha256": "7d3f8ce0e5a051906de1d165fa80852265efd688adfdb67bcef80828c98eac0e",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "_sessions_for",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "5ad5de1f6bd391d39239cb94dbbc19b6d5a5bfa24ea8a1a2c83decf29aeb2fd0"
+    },
+    {
+      "source_module": "engine/calendar_cutoff/market_calendar.py",
+      "source_selection": "is_trading_day",
+      "source_lines": [
+        24,
+        25
+      ],
+      "source_file_sha256": "7d3f8ce0e5a051906de1d165fa80852265efd688adfdb67bcef80828c98eac0e",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "is_trading_day",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "f5269bdc646e417f6381d82fe06ad173eb69db90fd27be5c1a06d7020d11444b"
+    },
+    {
+      "source_module": "engine/book/core.py",
+      "source_selection": "recognize_cash_merger: credit helper",
+      "source_lines": [
+        619,
+        623
+      ],
+      "source_file_sha256": "4ffcb2ef43d1dcbb71fdc5d02372f576e5cd7600907212f1ddc90ad9b0436c7f",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "recognize_cash_merger: credit helper",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "Nested inside the isolated cash-merger wrapper"
+      ],
+      "selected_ast_sha256": "25146ec49d5c1089a7418be7a6589c8b48ba9e59365123cf22d3088e7ea23863"
+    },
+    {
+      "source_module": "engine/book/core.py",
+      "source_selection": "recognize_cash_merger: cash-merger branch",
+      "source_lines": [
+        830,
+        834
+      ],
+      "source_file_sha256": "4ffcb2ef43d1dcbb71fdc5d02372f576e5cd7600907212f1ddc90ad9b0436c7f",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "recognize_cash_merger: cash-merger branch",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "Only the cash-merger branch is published; synthetic book and event bindings replace the private dispatcher"
+      ],
+      "selected_ast_sha256": "3cf9d246cc5ef48518ce5cb38229d27ec5a3f3ea4806c8f4e6e60b1e7c0a5753"
+    },
+    {
+      "source_module": "engine/book/core.py",
+      "source_selection": "settle_cash_receivables: overdue-receivable check",
+      "source_lines": [
+        611,
+        612
+      ],
+      "source_file_sha256": "4ffcb2ef43d1dcbb71fdc5d02372f576e5cd7600907212f1ddc90ad9b0436c7f",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "settle_cash_receivables: overdue-receivable check",
+      "adaptations": [
+        "Explanatory comments and docstrings removed"
+      ],
+      "selected_ast_sha256": "2f36c317bab2de8c0e94f53d9ead67ed4a61cfb1fb9e986e5fd0f09d579f369e"
+    },
+    {
+      "source_module": "engine/book/core.py",
+      "source_selection": "transition: cash settlement",
+      "source_lines": [
+        1269,
+        1275
+      ],
+      "source_file_sha256": "4ffcb2ef43d1dcbb71fdc5d02372f576e5cd7600907212f1ddc90ad9b0436c7f",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "settle_cash_receivables",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "The specialized split-payment audit branch is omitted; the payment condition and cash/deletion statements are unchanged",
+        "The example has no estimated ADR receivables"
+      ],
+      "selected_ast_sha256": "df51d64ed763b2ebafaccdb45195da3aa38f1504c5bfa4bb8d5a0031a228c850"
+    },
+    {
+      "source_module": "engine/book/core.py",
+      "source_selection": "missing_opening_quotes",
+      "source_lines": [
+        1045,
+        1046
+      ],
+      "source_file_sha256": "4ffcb2ef43d1dcbb71fdc5d02372f576e5cd7600907212f1ddc90ad9b0436c7f",
+      "public_file": "selected/accounting.py",
+      "public_symbol": "missing_opening_quotes",
+      "adaptations": [
+        "Explanatory comments and docstrings removed",
+        "Returns the original missing-held list; order execution and exchange-halt detection are not included"
+      ],
+      "selected_ast_sha256": "5e2e133ede638604b7697970e796025e8aef9c0f51f8c5bf7c19ba86c7dd1a21"
+    }
+  ]
+}

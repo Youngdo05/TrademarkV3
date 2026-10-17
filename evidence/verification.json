@@ -1,0 +1,223 @@
+{
+  "scope": "Synthetic verification of the public excerpts, prepared locally by the project author; not independent verification of private-project scale or authorship",
+  "tested_on": "2026-10-17",
+  "environment": {
+    "platform": "Windows",
+    "python": "3.13.13",
+    "fresh_environment_install_verified": false,
+    "other_platforms_verified": false
+  },
+  "summary": {
+    "tests": 32,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "by_module": {
+      "tests.test_accounting": 11,
+      "tests.test_constraints": 9,
+      "tests.test_modeling": 12
+    }
+  },
+  "synthetic_examples": {
+    "lightgbm": {
+      "rows": 800,
+      "features": 3,
+      "boosting_rounds": 24,
+      "finite_predictions": true,
+      "future_revision_fit_unchanged": true,
+      "parameters": "Public demonstration settings; private experiment settings omitted"
+    },
+    "allocation": {
+      "target": [
+        0.8,
+        0.4,
+        0.2
+      ],
+      "computed_weights": [
+        0.25000000000047284,
+        0.2499999999708063,
+        0.20000000000913723
+      ],
+      "analytical_weights": [
+        0.25,
+        0.25,
+        0.2
+      ],
+      "comparison_tolerance": 1e-07,
+      "active_exposure_rows": [
+        0,
+        1
+      ],
+      "objective": "Illustrative least-squares projection"
+    },
+    "cash_merger": {
+      "cash_before_dollars": 1000,
+      "cash_after_entitlement_dollars": 1000,
+      "receivable_dollars": 600,
+      "cash_after_payment_dollars": 1600,
+      "account_value_preserved": true
+    }
+  },
+  "tests": [
+    {
+      "module": "tests.test_accounting",
+      "name": "test_merger_claim_is_valued_before_payment_but_is_not_spendable_cash",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_replay_and_serialized_checkpoint_produce_the_same_payment",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_reapplying_the_event_cannot_credit_an_already_converted_position",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_bad_terms_fail_without_mutating_the_original_account[changes0]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_bad_terms_fail_without_mutating_the_original_account[changes1]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_bad_terms_fail_without_mutating_the_original_account[changes2]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_bad_terms_fail_without_mutating_the_original_account[changes3]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_bad_terms_fail_without_mutating_the_original_account[changes4]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_reused_receivable_identifier_is_rejected",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_overdue_claim_cannot_silently_roll_into_a_later_checkpoint",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_accounting",
+      "name": "test_zero_volume_or_missing_open_is_not_an_executable_held_quote",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_constraints",
+      "name": "test_name_and_group_limits_match_a_hand_solved_allocation",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_constraints",
+      "name": "test_geared_exposure_is_distinct_from_capital_weight",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_constraints",
+      "name": "test_selected_columns_preserve_the_original_asset_mapping",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_constraints",
+      "name": "test_zero_rows_do_not_create_a_spurious_constraint",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_constraints",
+      "name": "test_sparse_cache_is_immutable_and_refreshes_when_rows_change",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_constraints",
+      "name": "test_public_adapter_rejects_ambiguous_or_invalid_column_indices[indices0]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_constraints",
+      "name": "test_public_adapter_rejects_ambiguous_or_invalid_column_indices[indices1]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_constraints",
+      "name": "test_public_adapter_rejects_ambiguous_or_invalid_column_indices[indices2]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_constraints",
+      "name": "test_public_adapter_rejects_an_impossible_zero_row_cap",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_historical_snapshot_preserves_revisions_and_ignores_future_poison",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_visible_invalid_evidence_fails_instead_of_silently_dropping_the_row[changes0]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_visible_invalid_evidence_fails_instead_of_silently_dropping_the_row[changes1]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_visible_invalid_evidence_fails_instead_of_silently_dropping_the_row[changes2]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_visible_invalid_evidence_fails_instead_of_silently_dropping_the_row[changes3]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_ambiguous_versions_are_rejected",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_future_revision_cannot_change_the_actual_lightgbm_fit",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_invalid_fit_requests_fail_before_returning_a_model[infinite_feature]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_invalid_fit_requests_fail_before_returning_a_model[infinite_target]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_invalid_fit_requests_fail_before_returning_a_model[negative_weight]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_invalid_fit_requests_fail_before_returning_a_model[one_class]",
+      "status": "passed"
+    },
+    {
+      "module": "tests.test_modeling",
+      "name": "test_invalid_fit_requests_fail_before_returning_a_model[unregistered_seed]",
+      "status": "passed"
+    }
+  ]
+}
